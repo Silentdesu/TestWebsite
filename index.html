@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fixed position + якорные ссылки</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			font-family: 'Bebas Neue', cursive;
+			box-sizing: border-box;
+			scroll-behavior: smooth;
+		}
+
+		ul
+		{
+			list-style: none;
+			width: 100%;
+			background-color: #333;
+			display: flex;
+			justify-content: center;
+			position: fixed;
+			z-index: 1;
+		}
+
+		li
+		{
+			padding: 10px 20px;
+		}
+
+		li a
+		{
+			font-size: 24pt;
+			text-decoration: none;
+			color: white;
+		}
+
+		li a:hover
+		{
+			color: gray;
+		}
+
+		#header img
+		{
+			width: 100%;
+			height: 700px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.text
+		{
+			position: absolute;
+			top: 30%;
+  			left: 30%;
+  			transform: translate(-50%, -50%);
+  			color: black;
+  			font-size: 32pt;
+		}
+
+		h1, h2
+		{
+			text-align: center;
+		}
+
+		.s7
+		{
+			border-style: solid;
+			background-color: black;
+			color: rgba(255, 255, 255, 1);
+		}
+
+		#content
+		{
+			width: 100%;
+			text-align: center;
+			background-color: #81E1D8;
+		}
+
+		#footer
+		{
+			position: relative;
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			height: 100px;
+			background-color: #333;
+		}
+
+		#footer img
+		{
+			width: 2%;
+			margin: 20px 20px;
+			color
+		}
+
+		#footer img:hover
+		{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#header">News</a></li>
+		<li><a href="#content">Content</a></li>
+		<li><a href="#footer">About Us</a></li>
+	</ul>
+
+	<div class="main">
+		<div id="header">
+			<img src="https://images.wallpapersden.com/image/download/apex-legends-season-7_bGlnbWuUmZqaraWkpJRnamtlrWZlZ2k.jpg">
+			<div class="text">
+				<br>
+				<br>
+				<h1>Apex <br> -Legends-</h1>
+				<h2 class="s7">Season 7</h2>
+				<h2 style="font-family: monospace;">Вознесение</h2>
+				<p style="font-size: 16pt; 
+				text-align: center;">Олимп ждет вас в сезоне 7 Apex Legends <br>«Вознесение».Возьмете ли вы эту высоту?</p>
+			</div>
+
+			<div id="content">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_ZpLbriJXvM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+    	
+    	<div id="footer">
+    	    <img src="https://www.flaticon.com/svg/static/icons/svg/733/733635.svg" alt="">
+    		<img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111727.svg" alt="">
+    		<img src="https://www.flaticon.com/svg/static/icons/svg/1384/1384028.svg" alt="">
+    	</div>
+
+	</div>
+</body>
+</html>
